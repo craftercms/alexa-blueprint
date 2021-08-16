@@ -28,12 +28,14 @@ class SearchHelper {
         def q = "${FACT_CONTENT_TYPE_QUERY}"
         
         if (date) {
-            def month = date[Calendar.MONTH] + 1
-            def day = date[Calendar.DAY_OF_MONTH]
+            def month = date.getMonth()+1//[Calendar.MONTH] + 1
+            def day = date.getDay()//[Calendar.DAY_OF_MONTH]
             def dateQuery = "(factMonth_s:${month} AND factDay_s:${day})"
 
-            if(date[Calendar.YEAR]<Calendar.getInstance().get(Calendar.YEAR)) {
-                def year = date[Calendar.YEAR]
+            //if(date[Calendar.YEAR]<Calendar.getInstance().get(Calendar.YEAR)) {
+            if(date.getYear() && date.getYear() > 0) {
+              
+                def year = date.getYear()//[Calendar.YEAR]
                 dateQuery = "(factYear_s:${year} AND factMonth_s:${month} AND factDay_s:${day})"
             }
 
@@ -45,7 +47,7 @@ class SearchHelper {
             
             q = "${q} and ${textQuery}"
         }
-
+System.out.println(">>>"+q)
         def builder = new SearchSourceBuilder()
             .query(QueryBuilders.queryStringQuery(q))
             .from(start)

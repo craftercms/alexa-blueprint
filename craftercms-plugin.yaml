@@ -7,14 +7,13 @@ descriptorVersion: 2
 plugin:
   type: blueprint
   id: org.craftercms.blueprint.alexa
-  name: Alexa Blueprint
+  name: Alexa Fact Skill Blueprint
   tags:
     - blueprint
     - digital assistnat
     - alexa
-    - aws
   version:
-    major: 1
+    major: 2
     minor: 0
     patch: 0
   description: |
@@ -26,14 +25,14 @@ plugin:
     screenshots:
       - title: Alexa Test Console
         description: Alexa skill and testing console
-        url: /studio/static-assets/images/blueprints/empty/bp_empty.png
+        url: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/.crafter/screenshots/default.png
   developer:
     company:
-      name: Ethan Vertal
-      email: 
-      url: https://www.linkedin.com/in/ethan-vertal-a491aa1b9/
+      name: Crafter Software
+      email: info@craftersoftware.com
+      url: https://craftersoftware.com
   build:
-    id: cafebabe4e6a24b5e0481d6ba87901d0b02716c8
+    id: cafebabe4e6a24b5e0481d6ba87901d0b02716ca
     date: 2021-08-13T00:00:00Z
   license:
     name: MIT
@@ -41,7 +40,7 @@ plugin:
   crafterCmsVersions:
     - major: 4
       minor: 0
-      patch: 0
+      patch: 0     
   crafterCmsEditions:
     - community
     - enterprise
