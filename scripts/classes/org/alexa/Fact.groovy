@@ -18,6 +18,17 @@ class Fact {
         this.searchHelper = searchHelper
     }
     
+    def getFactsAsObj(SiteItemService, dt) {
+        def alexaResponse = ""
+        def facts = []
+
+        if (dt) {
+            facts = searchHelper.search(formatDate(dt), null)
+        }
+        
+        return facts   
+    }
+
     def getFacts(SiteItemService, session, dt, req) {
         try{
             def alexaResponse = ""
@@ -96,7 +107,7 @@ class Fact {
     }
     
     private def formatDate(dt) {
-        Date date = new SimpleDateFormat("yyyy/MM/dd").parse(dt).clearTime()
+        Date date = new SimpleDateFormat("yyyy/MM/dd").parse(dt) //.clearTime()
         
         return date
     }
