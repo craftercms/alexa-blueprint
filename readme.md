@@ -36,8 +36,7 @@ After creating the skill, select the Hello World template. This is a plain skill
 #### Step 4
 Navigate to Custom > Interaction Model > JSON Editor and copy this code into the editor: 
 
-```
-
+```JSON
    "interactionModel":{
       "languageModel":{
          "invocationName":"my crafter",
