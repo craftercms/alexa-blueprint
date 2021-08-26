@@ -10,18 +10,18 @@ plugin:
   name: Alexa Fact Skill Blueprint
   tags:
     - blueprint
-    - digital assistnat
+    - digital assistant
     - alexa
   version:
     major: 1
     minor: 0
-    patch: 0
+    patch: 1
   description: |
-    Simple Alexa skill blueprint
+    An Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/master/readme.md
   website:
     name: Alexa Skill Blueprint
-    url: https://craftercms.org
+    url: https://github.com/craftercms/alexa-blueprint
   media:
     screenshots:
       - title: Alexa Test Console
@@ -33,7 +33,7 @@ plugin:
       email: info@craftersoftware.com
       url: https://craftersoftware.com
   build:
-    id: cafebabe4e6a24b5e0481d6ba87901d0b02716ca
+    id: 2313babe4e6a24b5e0481d6ba87901d0b02716ca
     date: 2021-08-13T00:00:00Z
   license:
     name: MIT
