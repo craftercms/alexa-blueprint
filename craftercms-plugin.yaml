@@ -18,6 +18,7 @@ plugin:
     patch: 0
   description: |
     Simple Alexa skill blueprint
+  documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/master/readme.md
   website:
     name: Alexa Skill Blueprint
     url: https://craftercms.org
