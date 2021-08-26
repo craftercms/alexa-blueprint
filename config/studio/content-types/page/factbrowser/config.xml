@@ -10,4 +10,9 @@
 	<quickCreatePath></quickCreatePath>
 	<noThumbnail>true</noThumbnail>
 	<image-thumbnail></image-thumbnail>
+	<paths>
+		<includes>
+			<pattern>^HIDDEN</pattern>
+		</includes>
+	</paths>	
 </content-type>
