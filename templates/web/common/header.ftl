@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="/">Testing Console</a>

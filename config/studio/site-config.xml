@@ -21,9 +21,9 @@
 
 -->
 <site-config>
-    <version>8</version>
-    <wem-project>alexa4</wem-project>
-    <display-name>alexa4</display-name>
+    <version>7</version>
+    <wem-project>{siteName}</wem-project>
+    <display-name>{siteName}</display-name>
     <default-timezone>EST5EDT</default-timezone>
 
     <!-- Site URLs. Default to http://localhost:8080 if blank -->
@@ -75,13 +75,6 @@
      -->
     <plugin-folder-pattern>/config/studio/plugins/${type}/${name}</plugin-folder-pattern>
 
-    <!--
-        Prevent deleting, renaming or cutting root folders of sidebar
-    -->
-    <protected-folders-patterns>
-        <pattern>^/([^ !$`&amp;*()/+]|(\\[ !$`&amp;*()+]))+$</pattern>
-    </protected-folders-patterns>
-
     <repository rootPrefix="/site">
 
         <!-- default inheritance file name -->
@@ -94,7 +87,6 @@
         Items that match the paths specified will be grouped together in the dashboard widget
         -->
         <folders>
-            <folder name="Facts" path="/site/items/fact" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Pages" path="/website" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Components" path="/components" read-direct-children="false" attach-root-prefix="true"/>
             <folder name="Assets" path="/static-assets" read-direct-children="false" attach-root-prefix="false"/>
@@ -114,11 +106,11 @@
 
             <pattern-group name="component">
                 <pattern>/site/components/([^&lt;]+)\.xml</pattern>
-                <pattern>/site/items/fact/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/system/page-components/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/component-bindings/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/indexes/([^&lt;]+)\.xml</pattern>
                 <pattern>/site/resources/([^&lt;]+)\.xml</pattern>
+                <pattern>/site/items/([^&lt;]+)\.xml</pattern>
             </pattern-group>
 
             <pattern-group name="asset">
@@ -152,7 +144,7 @@
         </display-in-widget-patterns>
     </repository>
     <contentMonitoring>
-        <monitor>
+        <!-- monitor>
             <name>Content Expiring Tomorrow</name>
             <query>expired_dt:[now+1d/d TO now+2d/d]</query>
             <paths>
@@ -203,6 +195,6 @@
                     <locale>en</locale>
                 </path>
             </paths>
-        </monitor>
+        </monitor -->
     </contentMonitoring>
 </site-config>

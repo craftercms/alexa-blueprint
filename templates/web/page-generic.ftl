@@ -1,7 +1,9 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
 
 <#assign "interactionModelJson">
-    <iframe src="/static-assets/app/interaction-model.json" width="80%"></iframe>
+    <pre  width="80%">
+        <#include "/static-assets/app/interaction-model.json" >
+    </pre>
 </#assign>
 
 <!DOCTYPE html>

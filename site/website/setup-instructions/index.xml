@@ -13,11 +13,10 @@
 	<folder-name>setup-instructions</folder-name>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-08-12T22:25:34.360Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-08-12T22:25:34.360Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-08-17T04:11:03.956Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-08-17T04:11:03.956Z</lastModifiedDate_dt>
 	<navLabel>Setup Instructions</navLabel>
-	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Alexa Fact Skill Setup&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;This blueprint is intended to show a use case of Crafter CMS with Alexa.&lt;/span&gt;&lt;/p&gt;
+	<content_html>&lt;h1 id="mcetoc_1fcrc7nns8"&gt;&lt;strong&gt;Setting up your own Alexa Skills with Crafter CMS&lt;/strong&gt;&lt;/h1&gt;
 &lt;div class="mce-toc"&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;ul&gt;
@@ -44,14 +43,14 @@
 &lt;/ul&gt;
 &lt;h2 id="mcetoc_1fcrc7nnsa"&gt;&lt;strong&gt;Set up&lt;/strong&gt;&lt;/h2&gt;
 &lt;h2 id="mcetoc_1fcrc7nnsb"&gt;&lt;strong&gt;Alexa Developer Console&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;In order to configure this Blueprint, you can either copy the Json from below or manually create the skill from scratch yourself. &lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style="font-weight: 400;"&gt;To learn more about skills refer to the Alexa Developer Console docs here:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;In order to configure this Blueprint, you can either copy the JSON from below, or manually create the skill from scratch yourself. &lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style="font-weight: 400;"&gt;To learn more about skills refer to the Alexa Developer Console docs here:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html"&gt;&lt;span style="font-weight: 400;"&gt;https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="mcetoc_1fcrc7nnsc"&gt;&lt;strong&gt;Replicate by copying Json&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id="mcetoc_1fcrc7nnsc"&gt;&lt;strong&gt;Replicate by copying JSON&lt;/strong&gt;&lt;/h3&gt;
 &lt;h4&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In the Alexa Developer Console (&lt;a href="https://developer.amazon.com/alexa/console/ask"&gt;https://developer.amazon.com/alexa/console/ask&lt;/a&gt;), you should log in with a corporate account. If you don&amp;rsquo;t have one, setting it up is simple. Just enter the information required on the sign up page.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;&lt;img src="/static-assets/pages/images/image4.png" /&gt;Step 2&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;After signing up, navigate to create a new skill. Enter a name for your skill and the Custom option should be selected. Scroll down to step 2 and select Provision your own for the backend resources. This makes it so that Alexa will be able to communicate with the blueprint site.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;After signing up, navigate to create a new skill. Enter a name for your skill and the Custom option should be selected. Scroll down to step 2 and select "Provision your own" for the backend resources. This makes it so that Alexa will be able to communicate with the blueprint site.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="/static-assets/pages/images/image7.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -66,7 +65,8 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;&lt;img src="/static-assets/pages/images/image8.png" /&gt;Step 5&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;The next step is to set up your endpoint. Navigate to Custom &amp;gt; Interaction Model &amp;gt; Endpoint. Select the https option and enter your endpoint. It should look something like:&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://website.com/api/alexa/fact.json?crafterSite=siteName"&gt;&lt;span style="font-weight: 400;"&gt;https://website.com/api/alexa/fact.json?crafterSite=siteName&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;&lt;a href="https://website.com/api/alexa/skill/fact.json?crafterSite=siteName"&gt;https://website.com/api/alexa/skill/fact.json&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Example: &lt;strong&gt;https://alexafacts.craftercloud.io/api/alexa/skill/fact.json&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Save the model with the Save Model button and then build it with the build model.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;You should get a notification like this when finished.&lt;/span&gt;&lt;/p&gt;
@@ -76,7 +76,7 @@
 &lt;h3 id="mcetoc_1fcrc7nnsd"&gt;&lt;strong&gt;Building Your Skill and Using the Alexa Fact Skill&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;After importing the interaction module for your skill, the final step is to build the model which should be as simple as navigating back to Custom and selecting number 3 in the list on the right side of the screen. It should take a few moments to complete the build.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="/static-assets/pages/images/image11.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Moving on the to Test selection on the upper banner, select Development in the only dropdown menu on the page. You should be able to begin a dialogue looking something like this:&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Moving on to the Test selection on the upper banner, select Development in the only dropdown menu on the page. You should be able to begin a dialogue looking something like this:&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;img src="/static-assets/pages/images/image3.png" /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;To invoke your skill, your line of dialogue will look something like:&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -86,6 +86,6 @@
 &lt;h2 id="mcetoc_1fcrc7nnse"&gt;&lt;strong&gt;REST Script&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;In order to handle the request sent by Alexa, usage of a REST script is necessary. The request Alexa sends over is in JSON format, and the response should be in such format as well. To learn more about REST Scripts, refer here: &lt;/span&gt;&lt;a href="https://docs.craftercms.org/en/3.1/developers/projects/engine/api/groovy-api.html"&gt;&lt;span style="font-weight: 400;"&gt;https://docs.craftercms.org/en/3.1/developers/projects/engine/api/groovy-api.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="mcetoc_1fcrc7nnsf"&gt;&lt;strong&gt;Limitations and ability to expand in production&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Currently, this blueprint uses system memory to store temporary data from the request sent by Alexa. This design can lead to potential problems in a production setting with many servers. Alexa could send a secondary request to a different server from the original request and session. A solution to this would be to utilize Redis. Redis is a fast key-value storage system that allows you to cache data and access it extremely quickly.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt;Currently, this Blueprint uses system memory to store temporary data from the request sent by Alexa. This design can lead to potential problems in a production setting with many servers. Alexa could send a secondary request to a different server from the original request and session. A solution to this would be to utilize Redis. Redis is a fast key-value storage system that allows you to cache data and access it extremely quickly.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style="font-weight: 400;"&gt;Amazon&amp;rsquo;s Elasticache for Redis is a caching system that combines the speed of Redis with the availability and scalability of Amazon&amp;rsquo;s servers. You can read more about Elasticache and Redis here: &lt;/span&gt;&lt;a href="https://aws.amazon.com/elasticache/redis/?ch=ns&amp;amp;loc=1"&gt;&lt;span style="font-weight: 400;"&gt;https://aws.amazon.com/elasticache/redis/?ch=ns&amp;amp;loc=1&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</content_html>
 </page>
