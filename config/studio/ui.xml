@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
-	~ Copyright (C) 2007-2020 Crafter Software Corporation. All Rights Reserved.
-	~
-	~ This program is free software: you can redistribute it and/or modify
-	~ it under the terms of the GNU General Public License version 3 as published by
-	~ the Free Software Foundation.
-	~
-	~ This program is distributed in the hope that it will be useful,
-	~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-	~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the
-	~ GNU General Public License for more details.
-	~
-	~ You should have received a copy of the GNU General Public License
-	~ along with this program.	If not, see <http://www.gnu.org/licenses/>.
-	-->
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2021 Crafter Software Corporation. All Rights Reserved.
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
 <siteUi>
 	<widget id="craftercms.components.ToolsPanel">
 		<configuration>
@@ -29,7 +37,7 @@
 					<configuration>
 						<id>Facts</id>
 						<label>Facts</label>
-						<icon id="craftercms.icons.Component" />
+						<icon id="craftercms.icons.Component"/>
 						<rootPath>/site/items/fact</rootPath>
 						<locale>en</locale>
 					</configuration>
@@ -38,7 +46,7 @@
 					<configuration>
 						<id>Pages</id>
 						<label>Pages</label>
-						<icon id="@mui/icons-material/DescriptionOutlined" />
+						<icon id="@mui/icons-material/DescriptionOutlined"/>
 						<rootPath>/site/website</rootPath>
 						<locale>en</locale>
 					</configuration>
@@ -47,7 +55,7 @@
 					<configuration>
 						<id>StaticAssets</id>
 						<label>Static Assets</label>
-						<icon id="@mui/icons-material/ImageOutlined" />
+						<icon id="@mui/icons-material/ImageOutlined"/>
 						<rootPath>/static-assets</rootPath>
 						<locale>en</locale>
 					</configuration>
@@ -55,7 +63,7 @@
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
 						<label>Templates</label>
-						<icon id="@mui/icons-material/InsertDriveFileOutlined" />
+						<icon id="@mui/icons-material/InsertDriveFileOutlined"/>
 						<rootPath>/templates</rootPath>
 						<locale>en</locale>
 					</configuration>
@@ -63,7 +71,7 @@
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
 						<label>Scripts</label>
-						<icon id="@mui/icons-material/CodeRounded" />
+						<icon id="@mui/icons-material/CodeRounded"/>
 						<rootPath>/scripts</rootPath>
 						<locale>en</locale>
 					</configuration>
@@ -98,7 +106,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewComponentsPanel.title" defaultMessage="Add Components"/>
+						<title id="previewComponentsPanel.title"
+							   defaultMessage="Add Components"/>
 						<icon id="@mui/icons-material/ExtensionOutlined"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewComponentsPanel"/>
@@ -108,7 +117,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewBrowseComponentsPanel.title" defaultMessage="Browse Components"/>
+						<title id="previewBrowseComponentsPanel.title"
+							   defaultMessage="Browse Components"/>
 						<icon id="@mui/icons-material/ExtensionOutlined"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewBrowseComponentsPanel"/>
@@ -118,7 +128,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewDropTargetsPanel.title" defaultMessage="Component Drop Targets"/>
+						<title id="previewDropTargetsPanel.title"
+							   defaultMessage="Component Drop Targets"/>
 						<icon id="@mui/icons-material/ExtensionOutlined"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewDropTargetsPanel"/>
@@ -138,7 +149,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewAudiencesPanel.title" defaultMessage="Audience Targeting"/>
+						<title id="previewAudiencesPanel.title"
+							   defaultMessage="Audience Targeting"/>
 						<icon id="@mui/icons-material/EmojiPeopleRounded"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewAudiencesPanel">
@@ -147,31 +159,49 @@
 										<segment>
 											<id>segment</id>
 											<name>Segment</name>
-											<description>User segment.</description>
+											<description>User segment.
+											</description>
 											<type>dropdown</type>
-											<defaultValue>anonymous</defaultValue>
+											<defaultValue>anonymous
+											</defaultValue>
 											<values>
 												<value>
-													<label>Guy</label>
-													<value>guy</value>
+													<label>Guy
+													</label>
+													<value>guy
+													</value>
 												</value>
 												<value>
-													<label>Gal</label>
-													<value>gal</value>
+													<label>Gal
+													</label>
+													<value>gal
+													</value>
 												</value>
 												<value>
-													<label>Anonymous</label>
-													<value>anonymous</value>
+													<label>
+														Anonymous
+													</label>
+													<value>
+														anonymous
+													</value>
 												</value>
 											</values>
-											<helpText>Setting the segment will change content targeting to the audience selected.</helpText>
+											<helpText>Setting the segment
+												will change content
+												targeting to the
+												audience selected.
+											</helpText>
 										</segment>
 										<name>
 											<id>name</id>
 											<name>Name</name>
-											<description>User's first and last name.</description>
+											<description>User's first and
+												last name.
+											</description>
 											<type>input</type>
-											<helpText>Enter user's first and last name.</helpText>
+											<helpText>Enter user's first and
+												last name.
+											</helpText>
 										</name>
 									</fields>
 								</configuration>
@@ -182,7 +212,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewPageExplorerPanel.title" defaultMessage="Page Explorer"/>
+						<title id="previewPageExplorerPanel.title"
+							   defaultMessage="Page Explorer"/>
 						<icon id="craftercms.icons.PageExplorer"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewPageExplorerPanel"/>
@@ -192,7 +223,8 @@
 				<widget id="craftercms.components.ToolsPanelPageButton">
 					<configuration>
 						<target id="icePanel"/>
-						<title id="previewSimulatorPanel.title" defaultMessage="Device Simulator"/>
+						<title id="previewSimulatorPanel.title"
+							   defaultMessage="Device Simulator"/>
 						<icon id="@mui/icons-material/DevicesRounded"/>
 						<widgets>
 							<widget id="craftercms.components.PreviewSimulatorPanel">
@@ -233,19 +265,22 @@
 				<widget id="craftercms.components.LauncherSection">
 					<configuration>
 						<title id="launcher.siteSectionTitle">
-							<defaultMessage><![CDATA[Site <muted>• {siteName}</muted>]]></defaultMessage>
+							<defaultMessage>
+								<![CDATA[Site <muted>• {siteName}</muted>]]></defaultMessage>
 						</title>
 						<widgets>
 							<widget id="craftercms.components.LauncherLinkTile">
 								<configuration>
-									<title id="words.dashboard" defaultMessage="Dashboard"/>
+									<title id="words.dashboard"
+										   defaultMessage="Dashboard"/>
 									<systemLinkId>siteDashboardDialog</systemLinkId>
 									<icon id="@mui/icons-material/DashboardRounded"/>
 								</configuration>
 							</widget>
 							<widget id="craftercms.components.LauncherLinkTile">
 								<configuration>
-									<title id="words.preview" defaultMessage="Preview"/>
+									<title id="words.preview"
+										   defaultMessage="Preview"/>
 									<systemLinkId>preview</systemLinkId>
 									<icon id="craftercms.icons.Preview"/>
 								</configuration>
@@ -256,14 +291,16 @@
 									<role>developer</role>
 								</permittedRoles>
 								<configuration>
-									<title id="siteTools.title" defaultMessage="Site Tools"/>
+									<title id="siteTools.title"
+										   defaultMessage="Site Tools"/>
 									<systemLinkId>siteToolsDialog</systemLinkId>
 									<icon id="@mui/icons-material/BuildRounded"/>
 								</configuration>
 							</widget>
 							<widget id="craftercms.components.LauncherLinkTile">
 								<configuration>
-									<title id="words.search" defaultMessage="Search"/>
+									<title id="words.search"
+										   defaultMessage="Search"/>
 									<systemLinkId>siteSearchDialog</systemLinkId>
 									<icon id="@mui/icons-material/SearchRounded"/>
 								</configuration>
@@ -387,31 +424,32 @@
 					<title id="dropTargetsMessages.contentTypes" defaultMessage="Content Types"/>
 					<icon id="@mui/icons-material/WidgetsOutlined"/>
 					<url>content-types</url>
-					<widget id="craftercms.components.ContentTypeManagement" />
+					<widget id="craftercms.components.ContentTypeManagement"/>
 				</tool>
 				<tool>
-					<title id="GlobalMenu.EncryptionToolEntryLabel" defaultMessage="Encryption Tool"/>
+					<title id="GlobalMenu.EncryptionToolEntryLabel"
+						   defaultMessage="Encryption Tool"/>
 					<icon id="@mui/icons-material/LockOutlined"/>
 					<url>encrypt-tool</url>
-					<widget id="craftercms.components.SiteEncryptTool" />
+					<widget id="craftercms.components.SiteEncryptTool"/>
 				</tool>
 				<tool>
 					<title id="words.configuration" defaultMessage="Configuration"/>
 					<icon id="@mui/icons-material/SettingsApplicationsOutlined"/>
 					<url>configuration</url>
-					<widget id="craftercms.components.SiteConfigurationManagement" />
+					<widget id="craftercms.components.SiteConfigurationManagement"/>
 				</tool>
 				<tool>
 					<title id="GlobalMenu.AuditEntryLabel" defaultMessage="Audit"/>
-					<icon id="@mui/icons-material/SubjectRounded" />
+					<icon id="@mui/icons-material/SubjectRounded"/>
 					<url>audit</url>
-					<widget id="craftercms.components.SiteAuditManagement" />
+					<widget id="craftercms.components.SiteAuditManagement"/>
 				</tool>
 				<tool>
 					<title id="workflowStates.title" defaultMessage="Workflow States"/>
 					<icon id="@mui/icons-material/SettingsOutlined"/>
 					<url>item-states</url>
-					<widget id="craftercms.components.ItemStatesManagement" />
+					<widget id="craftercms.components.ItemStatesManagement"/>
 				</tool>
 				<tool>
 					<title id="GlobalMenu.LogConsoleEntryLabel" defaultMessage="Log Console"/>
@@ -427,13 +465,13 @@
 					<title id="words.publishing" defaultMessage="Publishing"/>
 					<icon id="@mui/icons-material/CloudUploadOutlined"/>
 					<url>publishing</url>
-					<widget id="craftercms.components.PublishingDashboard" />
+					<widget id="craftercms.components.PublishingDashboard"/>
 				</tool>
 				<tool>
 					<title id="remoteRepositories.title" defaultMessage="Remote Repositories"/>
 					<icon id="@mui/icons-material/StorageRounded"/>
 					<url>remote-repositories</url>
-					<widget id="craftercms.components.RemoteRepositoriesManagement" />
+					<widget id="craftercms.components.RemoteRepositoriesManagement"/>
 				</tool>
 				<tool>
 					<title>GraphQL</title>
@@ -445,7 +483,7 @@
 					<title id="PluginManagement.title" defaultMessage="Plugin Management"/>
 					<icon id="@mui/icons-material/ExtensionOutlined"/>
 					<url>plugins</url>
-					<widget id="craftercms.components.PluginManagement" />
+					<widget id="craftercms.components.PluginManagement"/>
 				</tool>
 			</tools>
 		</reference>
@@ -460,7 +498,8 @@
 				<value><![CDATA[<#import "/templates/system/common/crafter.ftl" as crafter />]]></value>
 			</crafterSupportMacros>
 			<transformPathToUrl label="Transform PATH to URL">
-				<value><![CDATA[${urlTransformationService.transform('storeUrlToRenderUrl', STORE_URL)}]]></value>
+				<value>
+					<![CDATA[${urlTransformationService.transform('storeUrlToRenderUrl', STORE_URL)}]]></value>
 			</transformPathToUrl>
 			<renderComponentsList label="Render list of components">
 				<value><![CDATA[<#list contentModel.VARIABLE_NAME.item as module>
@@ -513,7 +552,8 @@
 </html>]]></value>
 			</htmlPage>
 			<specificHTMLTag label="Field (Specific HTML Tag)">
-				<value><![CDATA[<@crafter.DESIRED_TAG $field="FIELD_ID">${contentModel.FIELD_ID}</@crafter.DESIRED_TAG>]]></value>
+				<value>
+					<![CDATA[<@crafter.DESIRED_TAG $field="FIELD_ID">${contentModel.FIELD_ID}</@crafter.DESIRED_TAG>]]></value>
 			</specificHTMLTag>
 			<renderComponentCollection label="Render Component Collection">
 				<value><![CDATA[<#-- Macro docs @ https://docs.craftercms.org/en/4.0/search.html?q=renderComponentCollection&check_keywords=yes&area=default -->
@@ -581,7 +621,8 @@
 				<value><![CDATA[session]]></value>
 			</session>
 			<transformPathToUrl label="Transform PATH to URL">
-				<value><![CDATA[urlTransformationService.transform('storeUrlToRenderUrl', STORE_URL)]]></value>
+				<value>
+					<![CDATA[urlTransformationService.transform('storeUrlToRenderUrl', STORE_URL)]]></value>
 			</transformPathToUrl>
 			<userProfile label="User Profile">
 				<value><![CDATA[profile]]></value>
