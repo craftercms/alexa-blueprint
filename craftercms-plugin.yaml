@@ -10,12 +10,12 @@ plugin:
   name: Alexa Fact Skill Blueprint
   tags:
     - blueprint
-    - digital assistnat
+    - digital assistant
     - alexa
   version:
     major: 2
     minor: 0
-    patch: 4
+    patch: 5
   description: |
     Simple Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/readme.md
