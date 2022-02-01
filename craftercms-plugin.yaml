@@ -15,7 +15,7 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 3
+    patch: 4
   description: |
     An Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/master/readme.md
@@ -60,6 +60,12 @@ plugin:
     - major: 3
       minor: 1
       patch: 20
+    - major: 3
+      minor: 1
+      patch: 21
+    - major: 3
+      minor: 1
+      patch: 22
   crafterCmsEditions:
     - community
     - enterprise
