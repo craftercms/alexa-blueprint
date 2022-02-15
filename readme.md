@@ -4,11 +4,11 @@ The Alexa Fact Skill Blueprint is an example of a headless content project that 
 
 # Installation
 
-The blueprint can be installed to your site from the Crafter CMS Marketplace.
+The blueprint can be installed to your site from the CrafterCMS Marketplace.
 
 # Setup
 
-After the plugin has been installed you need setup your Alexa Skill. 
+After the plugin has been installed you need setup your Alexa Skill.
 
 ## Prerequisites
 Must set up company account on Alexa Developer Console (https://developer.amazon.com/alexa/console/ask)
@@ -19,7 +19,7 @@ Must be able to post to an HTTPS address
 ### Alexa Developer Console
 In order to configure this Blueprint, you can either copy the JSON from below, or manually create the skill from scratch yourself.
 
-To learn more about skills refer to the Alexa Developer Console docs here: 
+To learn more about skills refer to the Alexa Developer Console docs here:
 
 https://developer.amazon.com/en-US/docs/alexa/ask-overviews/build-skills-with-the-alexa-skills-kit.html
 
@@ -31,10 +31,10 @@ In the Alexa Developer Console (https://developer.amazon.com/alexa/console/ask),
 After signing up, navigate to create a new skill. Enter a name for your skill and the Custom option should be selected. Scroll down to step 2 and select "Provision your own" for the backend resources. This makes it so that Alexa will be able to communicate with the blueprint site.
 
 #### Step 3
-After creating the skill, select the Hello World template. This is a plain skill with a basic built-in intent. 
+After creating the skill, select the Hello World template. This is a plain skill with a basic built-in intent.
 
 #### Step 4
-Navigate to Custom > Interaction Model > JSON Editor and copy this code into the editor: 
+Navigate to Custom > Interaction Model > JSON Editor and copy this code into the editor:
 
 ```JSON
    "interactionModel":{
@@ -49,31 +49,31 @@ Navigate to Custom > Interaction Model > JSON Editor and copy this code into the
             {
                "name":"AMAZON.FallbackIntent",
                "samples":[
-                  
+
                ]
             },
             {
                "name":"AMAZON.CancelIntent",
                "samples":[
-                  
+
                ]
             },
             {
                "name":"AMAZON.HelpIntent",
                "samples":[
-                  
+
                ]
             },
             {
                "name":"AMAZON.StopIntent",
                "samples":[
-                  
+
                ]
             },
             {
                "name":"AMAZON.NavigateHomeIntent",
                "samples":[
-                  
+
                ]
             },
             {
@@ -107,18 +107,18 @@ Navigate to Custom > Interaction Model > JSON Editor and copy this code into the
             {
                "name":"AMAZON.YesIntent",
                "samples":[
-                  
+
                ]
             },
             {
                "name":"AMAZON.NoIntent",
                "samples":[
-                  
+
                ]
             }
          ],
          "types":[
-            
+
          ]
       }
    }
@@ -128,7 +128,7 @@ Navigate to Custom > Interaction Model > JSON Editor and copy this code into the
 
 
 #### Step 5
-The next step is to set up your endpoint. Navigate to Custom > Interaction Model > Endpoint. Select the https option and enter your endpoint. 
+The next step is to set up your endpoint. Navigate to Custom > Interaction Model > Endpoint. Select the https option and enter your endpoint.
 
 https://website.com/api/alexa/skill/fact.json
 
@@ -145,7 +145,7 @@ Navigate to the Test option on the top banner and on the dropdown next to “Tes
 Building Your Skill and Using the Alexa Fact Skill
 After importing the interaction module for your skill, the final step is to build the model which should be as simple as navigating back to Custom and selecting number 3 in the list on the right side of the screen. It should take a few moments to complete the build.
 
-Moving on to the Test selection on the upper banner, select Development in the only dropdown menu on the page. 
+Moving on to the Test selection on the upper banner, select Development in the only dropdown menu on the page.
 
 
 To invoke your skill, your line of dialogue will look something like:
