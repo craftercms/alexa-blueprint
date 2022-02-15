@@ -1,4 +1,4 @@
-# This file describes a plugin for use in Crafter CMS
+# This file describes a plugin for use in CrafterCMS
 
 # The version of the format for this file
 descriptorVersion: 2
@@ -15,7 +15,7 @@ plugin:
   version:
     major: 2
     minor: 0
-    patch: 5
+    patch: 6
   description: |
     Simple Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/readme.md
@@ -29,12 +29,9 @@ plugin:
         url: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/.crafter/screenshots/default.png
   developer:
     company:
-      name: Crafter Software
-      email: info@craftersoftware.com
-      url: https://craftersoftware.com
-  build:
-    id: cafebabe2e6a24b5e0481d6ba87901d0b02716ca
-    date: 2021-09-05T00:00:00Z
+      name: CrafterCMS
+      email: info@craftercms.com
+      url: https://craftercms.com
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
@@ -45,4 +42,3 @@ plugin:
   crafterCmsEditions:
     - community
     - enterprise
-  searchEngine: Elasticsearch
