@@ -292,7 +292,7 @@
 								</permittedRoles>
 								<configuration>
 									<title id="siteTools.title"
-										   defaultMessage="Site Tools"/>
+										   defaultMessage="Project Tools"/>
 									<systemLinkId>siteToolsDialog</systemLinkId>
 									<icon id="@mui/icons-material/ConstructionRounded"/>
 								</configuration>
