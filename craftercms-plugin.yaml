@@ -15,7 +15,7 @@ plugin:
   version:
     major: 2
     minor: 0
-    patch: 23
+    patch: 24
   description: |
     Simple Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/readme.md
@@ -36,9 +36,6 @@ plugin:
     name: MIT
     url: https://opensource.org/licenses/MIT
   crafterCmsVersions:
-    - major: 4
-      minor: 0
-      patch: 2
     - major: 4
       minor: 0
       patch: 3
