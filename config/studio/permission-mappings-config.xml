@@ -126,6 +126,7 @@
                 <permission>list_plugins</permission>
                 <permission>get_children</permission>
                 <permission>publish_status</permission>
+                <permission>read_configuration</permission>
             </allowed-permissions>
         </rule>
     </role>
@@ -185,6 +186,7 @@
                 <permission>list_plugins</permission>
                 <permission>get_children</permission>
                 <permission>publish_status</permission>
+                <permission>read_configuration</permission>
             </allowed-permissions>
         </rule>
     </role>
@@ -256,6 +258,7 @@
                 <permission>install_plugins</permission>
                 <permission>get_children</permission>
                 <permission>publish_status</permission>
+                <permission>read_configuration</permission>
             </allowed-permissions>
         </rule>
     </role>
@@ -334,6 +337,8 @@
                 <permission>install_plugins</permission>
                 <permission>get_children</permission>
                 <permission>item_unlock</permission>
+                <permission>read_configuration</permission>
+                <permission>write_configuration</permission>
             </allowed-permissions>
         </rule>
     </role>
@@ -363,6 +368,7 @@
                 <permission>list_plugins</permission>
                 <permission>get_children</permission>
                 <permission>publish_status</permission>
+                <permission>read_configuration</permission>
             </allowed-permissions>
         </rule>
     </role>
