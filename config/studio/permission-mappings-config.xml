@@ -285,6 +285,7 @@
                 <permission>cancel_failed_pull</permission>
                 <permission>encryption_tool</permission>
                 <permission>get_children</permission>
+                <permission>edit_site</permission>
                 <permission>publish_status</permission>
                 <permission>publish_clear_lock</permission>
                 <permission>unlock_repository</permission>
@@ -335,6 +336,7 @@
                 <permission>list_plugins</permission>
                 <permission>install_plugins</permission>
                 <permission>get_children</permission>
+                <permission>publish_status</permission>
                 <permission>item_unlock</permission>
                 <permission>remove_plugins</permission>
                 <permission>content_read</permission>
