@@ -1,11 +1,11 @@
 <form>
 	<title>Generic Page</title>
-	<description/>
+	<description></description>
 	<objectType>page</objectType>
 	<content-type>/page/generic</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath/>
+	<quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
@@ -15,7 +15,7 @@
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value/>
+			<value></value>
 			<type>boolean</type>
 		</property>
 		<property>
@@ -27,17 +27,17 @@
 	</properties>
 	<sections>		<section>
 			<title>Generic Properties</title>
-			<description/>
+			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Page URL</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -51,20 +51,21 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints/>
+					<constraints>
+					</constraints>
 				</field>
 				<field>
 					<type>input</type>
 					<id>internal-name</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Internal Name</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -80,7 +81,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -88,22 +89,22 @@
 				<field>
 					<type>page-nav-order</type>
 					<id>placeInNav</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Place in Nav</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value/>
+							<value><![CDATA[]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -111,11 +112,11 @@
 				<field>
 					<type>input</type>
 					<id>navLabel</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Nav Label</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -131,19 +132,19 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
 				</field>
 				<field>
-					<type>rte</type>
+					<type>rte-tinymce5</type>
 					<id>content_html</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Content</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>width</name>
@@ -182,7 +183,7 @@
 						</property>
 						<property>
 							<name>supportedChannels</name>
-							<value/>
+							<value></value>
 							<type>supportedChannels</type>
 						</property>
 						<property>
@@ -197,19 +198,19 @@
 						</property>
 						<property>
 							<name>videoManager</name>
-							<value/>
+							<value></value>
 							<type>datasource:video</type>
 						</property>
 						<property>
 							<name>fileManager</name>
-							<value/>
+							<value></value>
 							<type>datasource:item</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -218,17 +219,17 @@
 		</section>
 	</sections>
 	<datasources>				<datasource>
-			<type>img-desktop-upload</type>
-			<id>upload</id>
-			<title>Upload</title>
-			<interface>image</interface>
-			<properties>
-				<property>
-					<name>repoPath</name>
-					<value>/static-assets/pages/images</value>
-					<type>string</type>
-				</property>
-			</properties>
-		</datasource>
+					<type>img-desktop-upload</type>
+					<id>upload</id>
+					<title>Upload</title>
+					<interface>image</interface>
+					<properties>
+						<property>
+							<name>repoPath</name>
+							<value>/static-assets/pages/images</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
 	</datasources>
 </form>

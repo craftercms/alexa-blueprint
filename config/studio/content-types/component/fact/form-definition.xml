@@ -1,6 +1,6 @@
 <form>
 	<title>Fact</title>
-	<description/>
+	<description></description>
 	<objectType>component</objectType>
 	<content-type>/component/fact</content-type>
 	<imageThumbnail>undefined</imageThumbnail>
@@ -9,7 +9,7 @@
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value/>
+			<value></value>
 			<type>template</type>
 		</property>
 		<property>
@@ -27,17 +27,17 @@
 	</properties>
 	<sections>		<section>
 			<title>Item: Fact Properties</title>
-			<description/>
+			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Component ID</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -51,20 +51,21 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints/>
+					<constraints>
+					</constraints>
 				</field>
 				<field>
 					<type>input</type>
 					<id>internal-name</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Internal Name</title>
-					<description/>
-					<defaultValue/>
-					<help/>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -78,7 +79,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -95,7 +96,7 @@
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -103,11 +104,11 @@
 				<field>
 					<type>dropdown</type>
 					<id>factYear_s</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Fact Year</title>
 					<description>The year the fact happened</description>
-					<defaultValue/>
-					<help/>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
@@ -116,19 +117,19 @@
 						</property>
 						<property>
 							<name>emptyvalue</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -136,11 +137,11 @@
 				<field>
 					<type>dropdown</type>
 					<id>factMonth_s</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Fact Month</title>
 					<description>The month the fact happened</description>
-					<defaultValue/>
-					<help/>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
@@ -149,19 +150,19 @@
 						</property>
 						<property>
 							<name>emptyvalue</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -169,11 +170,11 @@
 				<field>
 					<type>dropdown</type>
 					<id>factDay_s</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Fact Day</title>
 					<description>The day the fact happened</description>
-					<defaultValue/>
-					<help/>
+					<defaultValue></defaultValue>
+					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
@@ -182,19 +183,19 @@
 						</property>
 						<property>
 							<name>emptyvalue</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>readonly</name>
-							<value/>
+							<value></value>
 							<type>boolean</type>
 						</property>
 					</properties>
 					<constraints>
 						<constraint>
 							<name>required</name>
-							<value>true</value>
+							<value><![CDATA[true]]></value>
 							<type>boolean</type>
 						</constraint>
 					</constraints>
@@ -202,9 +203,9 @@
 				<field>
 					<type>repeat</type>
 					<id>facts_o</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>Facts</title>
-					<description/>
+					<description></description>
 					<minOccurs>0</minOccurs>
 					<maxOccurs>*</maxOccurs>
 					<properties>
@@ -220,215 +221,235 @@
 						</property>
 					</properties>
 					<fields>
-						<field>
-							<type>rte</type>
-							<id>fact_html</id>
-							<iceId/>
-							<title>Fact</title>
-							<description/>
-							<defaultValue/>
-							<help/>
-							<properties>
-								<property>
-									<name>width</name>
-									<value>900</value>
-									<type>int</type>
-								</property>
-								<property>
-									<name>height</name>
-									<value>300</value>
-									<type>int</type>
-								</property>
-								<property>
-									<name>maxlength</name>
-									<value/>
-									<type>int</type>
-								</property>
-								<property>
-									<name>enableSpellCheck</name>
-									<value>true</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>forceRootBlockPTag</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>forceBRTags</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>supportedChannels</name>
-									<value/>
-									<type>supportedChannels</type>
-								</property>
-								<property>
-									<name>rteConfiguration</name>
-									<value>generic</value>
-									<type>string</type>
-								</property>
-								<property>
-									<name>imageManager</name>
-									<value/>
-									<type>datasource:image</type>
-								</property>
-								<property>
-									<name>autoGrow</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-							</properties>
-							<constraints>
-								<constraint>
-									<name>required</name>
-									<value/>
-									<type>boolean</type>
-								</constraint>
-							</constraints>
-						</field>
-						<field>
-							<type>rte</type>
-							<id>detail_html</id>
-							<iceId/>
-							<title>Detail</title>
-							<description/>
-							<defaultValue/>
-							<help/>
-							<properties>
-								<property>
-									<name>width</name>
-									<value>900</value>
-									<type>int</type>
-								</property>
-								<property>
-									<name>height</name>
-									<value>300</value>
-									<type>int</type>
-								</property>
-								<property>
-									<name>maxlength</name>
-									<value/>
-									<type>int</type>
-								</property>
-								<property>
-									<name>enableSpellCheck</name>
-									<value>true</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>forceRootBlockPTag</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>forceBRTags</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-								<property>
-									<name>supportedChannels</name>
-									<value/>
-									<type>supportedChannels</type>
-								</property>
-								<property>
-									<name>rteConfiguration</name>
-									<value>generic</value>
-									<type>string</type>
-								</property>
-								<property>
-									<name>imageManager</name>
-									<value/>
-									<type>datasource:image</type>
-								</property>
-								<property>
-									<name>autoGrow</name>
-									<value>false</value>
-									<type>boolean</type>
-								</property>
-							</properties>
-							<constraints>
-								<constraint>
-									<name>required</name>
-									<value>true</value>
-									<type>boolean</type>
-								</constraint>
-							</constraints>
-						</field>
+				<field>
+					<type>rte</type>
+					<id>fact_html</id>
+					<iceId></iceId>
+					<title>Fact</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>width</name>
+							<value>900</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>height</name>
+							<value>300</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>allowResize</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSpellCheck</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceRootBlockPTag</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forcePTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceBRTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceImageAlts</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>supportedChannels</name>
+							<value></value>
+							<type>supportedChannels</type>
+						</property>
+						<property>
+							<name>rteConfiguration</name>
+							<value>generic</value>
+							<type>string</type>
+						</property>
+						<property>
+							<name>imageManager</name>
+							<value></value>
+							<type>datasource:image</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
+					<type>rte</type>
+					<id>detail_html</id>
+					<iceId></iceId>
+					<title>Detail</title>
+					<description></description>
+					<defaultValue></defaultValue>
+					<help></help>
+					<properties>
+						<property>
+							<name>width</name>
+							<value>900</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>height</name>
+							<value>300</value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxlength</name>
+							<value></value>
+							<type>int</type>
+						</property>
+						<property>
+							<name>allowResize</name>
+							<value></value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSpellCheck</name>
+							<value>true</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceRootBlockPTag</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forcePTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceBRTags</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>forceImageAlts</name>
+							<value>false</value>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>supportedChannels</name>
+							<value></value>
+							<type>supportedChannels</type>
+						</property>
+						<property>
+							<name>rteConfiguration</name>
+							<value>generic</value>
+							<type>string</type>
+						</property>
+						<property>
+							<name>imageManager</name>
+							<value></value>
+							<type>datasource:image</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>required</name>
+							<value><![CDATA[true]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
 					</fields>
 				</field>
 			</fields>
 		</section>
 	</sections>
 	<datasources>				<datasource>
-			<type>key-value-list</type>
-			<id>months</id>
-			<title>Months</title>
-			<interface>item</interface>
-			<properties>
-				<property>
-					<name>dataType</name>
-					<value>[{"value":"value","label":"","selected":false},{"value":"value_s","label":"String","selected":true},{"value":"value_i","label":"Integer","selected":false},{"value":"value_f","label":"Float","selected":false},{"value":"value_dt","label":"Date","selected":false},{"value":"value_html","label":"HTML","selected":false}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>options</name>
-					<value>[{"key":"1","value":"1"},{"key":"2","value":"2"},{"key":"3","value":"3"},{"key":"4","value":"4"},{"key":"5","value":"5"},{"key":"6","value":"6"},{"key":"7","value":"7"},{"key":"8","value":"8"},{"key":"9","value":"9"},{"key":"10","value":"10"},{"key":"11","value":"11"},{"key":"12","value":"12"}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>showkeys</name>
-					<value/>
-					<type>undefined</type>
-				</property>
-			</properties>
-		</datasource>
-		<datasource>
-			<type>key-value-list</type>
-			<id>days</id>
-			<title>Days</title>
-			<interface>item</interface>
-			<properties>
-				<property>
-					<name>dataType</name>
-					<value>[{"value":"value","label":"","selected":false},{"value":"value_s","label":"String","selected":true},{"value":"value_i","label":"Integer","selected":false},{"value":"value_f","label":"Float","selected":false},{"value":"value_dt","label":"Date","selected":false},{"value":"value_html","label":"HTML","selected":false}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>options</name>
-					<value>[{"key":"1","value":"1"},{"key":"2","value":"2"},{"key":"3","value":"3"},{"key":"4","value":"4"},{"key":"5","value":"5"},{"key":"6","value":"6"},{"key":"7","value":"7"},{"key":"8","value":"8"},{"key":"9","value":"9"},{"key":"10","value":"10"},{"key":"11","value":"11"},{"key":"12","value":"12"},{"key":"13","value":"13"},{"key":"14","value":"14"},{"key":"15","value":"15"},{"key":"16","value":"16"},{"key":"17","value":"17"},{"key":"18","value":"18"},{"key":"19","value":"19"},{"key":"20","value":"20"},{"key":"21","value":"21"},{"key":"22","value":"22"},{"key":"23","value":"23"},{"key":"24","value":"24"},{"key":"25","value":"25"},{"key":"26","value":"26"},{"key":"27","value":"27"},{"key":"28","value":"28"},{"key":"29","value":"29"},{"key":"30","value":"30"},{"key":"31","value":"31"}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>showkeys</name>
-					<value/>
-					<type>undefined</type>
-				</property>
-			</properties>
-		</datasource>
-		<datasource>
-			<type>key-value-list</type>
-			<id>years</id>
-			<title>Years</title>
-			<interface>item</interface>
-			<properties>
-				<property>
-					<name>dataType</name>
-					<value>[{"value":"value","label":"","selected":false},{"value":"value_s","label":"String","selected":true},{"value":"value_i","label":"Integer","selected":false},{"value":"value_f","label":"Float","selected":false},{"value":"value_dt","label":"Date","selected":false},{"value":"value_html","label":"HTML","selected":false}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>options</name>
-					<value>[{"key":"1945","value":"1945"},{"key":"1776","value":"1776"},{"key":"2001","value":"2001"},{"key":"1984","value":"1984"},{"key":"1918","value":"1918"},{"key":"1905","value":"1905"},{"key":"1865","value":"1865"},{"key":"1991","value":"1991"},{"key":"1969","value":"1969"},{"key":"1473","value":"1473"},{"key":"1966","value":"1966"},{"key":"1656","value":"1656"},{"key":"1636","value":"1636"},{"key":"1884","value":"1884"},{"key":"1741","value":"1741"},{"key":"1896","value":"1896"},{"key":"1853","value":"1853"},{"key":"1502","value":"1502"},{"key":"1929","value":"1929"},{"key":"1559","value":"1559"}]</value>
-					<type>undefined</type>
-				</property>
-				<property>
-					<name>showkeys</name>
-					<value/>
-					<type>undefined</type>
-				</property>
-			</properties>
-		</datasource>
+					<type>key-value-list</type>
+					<id>months</id>
+					<title>Months</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>options</name>
+							<value>[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;5&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;6&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;8&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;9&quot;},{&quot;key&quot;:&quot;10&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;key&quot;:&quot;11&quot;,&quot;value&quot;:&quot;11&quot;},{&quot;key&quot;:&quot;12&quot;,&quot;value&quot;:&quot;12&quot;}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>showkeys</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>key-value-list</type>
+					<id>days</id>
+					<title>Days</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>options</name>
+							<value>[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;5&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;6&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;8&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;9&quot;},{&quot;key&quot;:&quot;10&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;key&quot;:&quot;11&quot;,&quot;value&quot;:&quot;11&quot;},{&quot;key&quot;:&quot;12&quot;,&quot;value&quot;:&quot;12&quot;},{&quot;key&quot;:&quot;13&quot;,&quot;value&quot;:&quot;13&quot;},{&quot;key&quot;:&quot;14&quot;,&quot;value&quot;:&quot;14&quot;},{&quot;key&quot;:&quot;15&quot;,&quot;value&quot;:&quot;15&quot;},{&quot;key&quot;:&quot;16&quot;,&quot;value&quot;:&quot;16&quot;},{&quot;key&quot;:&quot;17&quot;,&quot;value&quot;:&quot;17&quot;},{&quot;key&quot;:&quot;18&quot;,&quot;value&quot;:&quot;18&quot;},{&quot;key&quot;:&quot;19&quot;,&quot;value&quot;:&quot;19&quot;},{&quot;key&quot;:&quot;20&quot;,&quot;value&quot;:&quot;20&quot;},{&quot;key&quot;:&quot;21&quot;,&quot;value&quot;:&quot;21&quot;},{&quot;key&quot;:&quot;22&quot;,&quot;value&quot;:&quot;22&quot;},{&quot;key&quot;:&quot;23&quot;,&quot;value&quot;:&quot;23&quot;},{&quot;key&quot;:&quot;24&quot;,&quot;value&quot;:&quot;24&quot;},{&quot;key&quot;:&quot;25&quot;,&quot;value&quot;:&quot;25&quot;},{&quot;key&quot;:&quot;26&quot;,&quot;value&quot;:&quot;26&quot;},{&quot;key&quot;:&quot;27&quot;,&quot;value&quot;:&quot;27&quot;},{&quot;key&quot;:&quot;28&quot;,&quot;value&quot;:&quot;28&quot;},{&quot;key&quot;:&quot;29&quot;,&quot;value&quot;:&quot;29&quot;},{&quot;key&quot;:&quot;30&quot;,&quot;value&quot;:&quot;30&quot;},{&quot;key&quot;:&quot;31&quot;,&quot;value&quot;:&quot;31&quot;}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>showkeys</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>key-value-list</type>
+					<id>years</id>
+					<title>Years</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>dataType</name>
+							<value>[{&quot;value&quot;:&quot;value&quot;,&quot;label&quot;:&quot;&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_s&quot;,&quot;label&quot;:&quot;String&quot;,&quot;selected&quot;:true},{&quot;value&quot;:&quot;value_i&quot;,&quot;label&quot;:&quot;Integer&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_f&quot;,&quot;label&quot;:&quot;Float&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_dt&quot;,&quot;label&quot;:&quot;Date&quot;,&quot;selected&quot;:false},{&quot;value&quot;:&quot;value_html&quot;,&quot;label&quot;:&quot;HTML&quot;,&quot;selected&quot;:false}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>options</name>
+							<value>[{&quot;key&quot;:&quot;1945&quot;,&quot;value&quot;:&quot;1945&quot;},{&quot;key&quot;:&quot;1776&quot;,&quot;value&quot;:&quot;1776&quot;},{&quot;key&quot;:&quot;2001&quot;,&quot;value&quot;:&quot;2001&quot;},{&quot;key&quot;:&quot;1984&quot;,&quot;value&quot;:&quot;1984&quot;},{&quot;key&quot;:&quot;1918&quot;,&quot;value&quot;:&quot;1918&quot;},{&quot;key&quot;:&quot;1905&quot;,&quot;value&quot;:&quot;1905&quot;},{&quot;key&quot;:&quot;1865&quot;,&quot;value&quot;:&quot;1865&quot;},{&quot;key&quot;:&quot;1991&quot;,&quot;value&quot;:&quot;1991&quot;},{&quot;key&quot;:&quot;1969&quot;,&quot;value&quot;:&quot;1969&quot;},{&quot;key&quot;:&quot;1473&quot;,&quot;value&quot;:&quot;1473&quot;},{&quot;key&quot;:&quot;1966&quot;,&quot;value&quot;:&quot;1966&quot;},{&quot;key&quot;:&quot;1656&quot;,&quot;value&quot;:&quot;1656&quot;},{&quot;key&quot;:&quot;1636&quot;,&quot;value&quot;:&quot;1636&quot;},{&quot;key&quot;:&quot;1884&quot;,&quot;value&quot;:&quot;1884&quot;},{&quot;key&quot;:&quot;1741&quot;,&quot;value&quot;:&quot;1741&quot;},{&quot;key&quot;:&quot;1896&quot;,&quot;value&quot;:&quot;1896&quot;},{&quot;key&quot;:&quot;1853&quot;,&quot;value&quot;:&quot;1853&quot;},{&quot;key&quot;:&quot;1502&quot;,&quot;value&quot;:&quot;1502&quot;},{&quot;key&quot;:&quot;1929&quot;,&quot;value&quot;:&quot;1929&quot;},{&quot;key&quot;:&quot;1559&quot;,&quot;value&quot;:&quot;1559&quot;}]</value>
+								<type>undefined</type>
+						</property>
+						<property>
+							<name>showkeys</name>
+							<value></value>
+								<type>undefined</type>
+						</property>
+					</properties>
+				</datasource>
 	</datasources>
 </form>

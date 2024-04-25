@@ -19,18 +19,18 @@
 	<description>Section Defaults provides inherited values to all children and sibling content items. To learn more about content inheritance see docs.craftercms.org topic &quot;Content Inheritance&quot;</description>
 	<objectType>component</objectType>
 	<content-type>/component/level-descriptor</content-type>
-	<quickCreate>false</quickCreate>
-	<quickCreatePath/>
+    <quickCreate>false</quickCreate>
+    <quickCreatePath></quickCreatePath>
 	<properties>		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value/>
+			<value></value>
 			<type>template</type>
 		</property>
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value/>
+			<value></value>
 			<type>boolean</type>
 		</property>
 		<property>
@@ -42,17 +42,17 @@
 	</properties>
 	<sections>		<section>
 			<title>Section Defaults Properties</title>
-			<description/>
+			<description></description>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId/>
+					<iceId></iceId>
 					<title>File Name</title>
-					<description/>
+					<description></description>
 					<defaultValue>crafter-level-descriptor.level</defaultValue>
-					<help/>
+					<help></help>
 					<properties>
 						<property>
 							<name>size</name>
@@ -70,10 +70,11 @@
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints/>
+					<constraints>
+					</constraints>
 				</field>
 			</fields>
 		</section>
 	</sections>
-	<datasources/>
+	<datasources>	</datasources>
 </form>
