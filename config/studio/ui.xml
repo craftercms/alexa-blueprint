@@ -106,9 +106,8 @@
                 <widget id="craftercms.components.ToolsPanelPageButton">
                     <configuration>
                         <target id="icePanel"/>
-                        <title id="previewComponentsPanel.title"
-                               defaultMessage="Add Components"/>
-                        <icon id="@mui/icons-material/ExtensionOutlined"/>
+                        <title id="previewComponentsPanelTitle" defaultMessage="Create Content"/>
+                        <icon id="craftercms.icons.AddComponents"/>
                         <widgets>
                             <widget id="craftercms.components.PreviewComponentsPanel"/>
                         </widgets>
@@ -117,9 +116,8 @@
                 <widget id="craftercms.components.ToolsPanelPageButton">
                     <configuration>
                         <target id="icePanel"/>
-                        <title id="previewBrowseComponentsPanel.title"
-                               defaultMessage="Browse Components"/>
-                        <icon id="@mui/icons-material/ExtensionOutlined"/>
+                        <title id="previewBrowseComponentsPanelTitle" defaultMessage="Existing Content"/>
+                        <icon id="craftercms.icons.BrowseComponents"/>
                         <widgets>
                             <widget id="craftercms.components.PreviewBrowseComponentsPanel"/>
                         </widgets>
@@ -128,9 +126,8 @@
                 <widget id="craftercms.components.ToolsPanelPageButton">
                     <configuration>
                         <target id="icePanel"/>
-                        <title id="previewDropTargetsPanel.title"
-                               defaultMessage="Component Drop Targets"/>
-                        <icon id="@mui/icons-material/ExtensionOutlined"/>
+                        <title id="previewDropTargetsPanelTitle" defaultMessage="Drop Targets"/>
+                        <icon id="@mui/icons-material/MoveToInboxRounded"/>
                         <widgets>
                             <widget id="craftercms.components.PreviewDropTargetsPanel"/>
                         </widgets>
