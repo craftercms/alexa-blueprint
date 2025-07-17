@@ -13,9 +13,9 @@ plugin:
     - digital assistant
     - alexa
   version:
-    major: 2
+    major: 3
     minor: 0
-    patch: 41
+    patch: 0
   description: |
     Simple Alexa skill blueprint
   documentation: https://raw.githubusercontent.com/craftercms/alexa-blueprint/next/readme.md
@@ -36,14 +36,6 @@ plugin:
     name: MIT
     url: https://opensource.org/licenses/MIT
   crafterCmsVersions:
-    - major: 4
-      minor: 1
-    - major: 4
-      minor: 2
-    - major: 4
-      minor: 3
-    - major: 4
-      minor: 4
     - major: 5
       minor: 0
   crafterCmsEditions:
